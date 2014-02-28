@@ -84,16 +84,24 @@ $(document).ready(function() {
         return false;
       },
       select: function( event, ui ) {
-        $( "#addr" ).val( ui.item.data.Name + " " +  ui.item.data.HouseNumber);
+        
 
         $( "#log" ).html(JSON.stringify(ui.item.data));
  		var markerdata = ui.item.data;
+ 		var str = "";
  		if(markerdata.Latitude !== 0 && markerdata.Longitude !== 0) {
  			addMarker(markerdata);	
 	 		//zoom in close on select
 	 		Norkart.map.setView([markerdata.Latitude, markerdata.Longitude],17);
+	 		str = markerdata.Name + " " +  markerdata.HouseNumber;
+			
+	 		$("#husnummer").val(markerdata.HouseNumber);
+ 		} else {
+ 			str = markerdata.Name;
  		}
-
+		$("#gatenavn").val(markerdata.Name);
+		
+		$( "#addr" ).val(str);
 
         return false;
       }
