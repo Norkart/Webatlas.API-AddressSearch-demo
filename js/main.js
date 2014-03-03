@@ -39,7 +39,7 @@ $(document).ready(function() {
 	          	type: 'GET',
 	          	dataType: 'json',
 	          	beforeSend: function (xhr) {
-		           xhr.setRequestHeader('X-WAAPI-TOKEN', '575589FB-8546-4AFD-A499-A50CB85345E3');
+		           xhr.setRequestHeader('X-WAAPI-TOKEN', '71899D71-9ED1-48AA-AE82-3013293CE619');
 		        },
 	          	success: function( data ) {
 		        	console.log(data);
