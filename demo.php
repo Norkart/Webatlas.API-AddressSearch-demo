@@ -8,7 +8,7 @@ $ch = curl_init("http://www.webatlas.no/WAAPI-AddressSearch/simpleLookup/?format
 
 //Token må endres til kunde/tjenestespesifikk token. Den får du ved å kontakte Norkart AS (norkart.no)
 $header  = array(
-	"X-WAAPI-TOKEN"=>"71899D71-9ED1-48AA-AE82-3013293CE619",
+	"X-WAAPI-TOKEN: 71899D71-9ED1-48AA-AE82-3013293CE619",
 );
  
 curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
