@@ -1,0 +1,231 @@
+body {
+    background-color: #efefef;
+}
+
+
+#search-form {
+    margin: 3px;
+}
+
+#suggestions-container {
+    position: absolute;
+    top: 35px;
+    z-index: 999999999;
+    background-color: #fff;
+}
+#search-results-container {
+    position: absolute;
+    top: 35px;
+    z-index: 999999999;
+    background-color: #fff;
+}
+
+/* The outer-most container for the search elements */
+#search-outer-container {
+    background-color: #fefefe;
+    box-shadow: 1px 1px 2px #C1C1C1;
+    min-width: 340px;
+    max-width: 450px;
+}
+
+#search-header-container {
+    padding: 0px, auto;
+    height: 30px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#search-input {
+    outline: none;
+    background-color: #fefefe;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding-top:10px;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #515151;
+    background-color: #fefefe;
+}
+
+#search-input {
+    float: left;
+    width: 85%;
+    padding-left: 5px;
+}
+
+#search-input::-ms-clear {
+    display: none;
+}
+
+.search-input-button-row {
+    cursor: pointer;
+    display: inline;
+    width: 35px;
+}
+
+.search-input-button-row a {
+    padding-right: 10px;
+}
+
+#search-body-container {
+	max-height: 500px;
+	transition-property: all;
+	transition-duration: .1s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+#search-body-container.closed {
+    max-height:0;
+}
+
+#search-clear-button {
+    
+}
+
+#search-clear-button:hover {
+    color: #565656;
+    cursor: pointer;
+}
+
+
+.search-result-element {
+    padding: 10px;
+    border: none;
+    outline: 0;
+    width: 330px;
+    cursor: pointer;
+}
+
+.search-result-element:focus {
+    background-color: #efefef;
+}
+
+.search-result-element:hover {
+    background-color: #efefef;
+}
+
+.search-result-element p {
+    margin: 0;
+}
+
+
+
+
+/* LOADERS */
+
+.norkart-loader-container {
+    width:100%;
+    background-color: #EFEFEF;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+
+/**    STANDARD LOADER    **/
+.norkart-loader-std {
+    display:table;
+    margin:5px;
+    margin-left:10px;
+}
+
+.norkart-loader-spinner-std {
+    display:inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    position: relative;
+    -webkit-animation: rotation .6s infinite linear;
+    -moz-animation: rotation .6s infinite linear;
+    -o-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    border-left: 4px solid rgba(81, 160, 38, .15);
+    border-right: 4px solid rgba(81, 160, 38, .15);
+    border-bottom: 4px solid rgba(81, 160, 38, .15);
+    border-top: 4px solid rgb(56, 138, 141);
+    border-radius: 100%;
+}
+
+.norkart-loader-text-container-std {
+    display: table-cell;
+    padding: 15px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.norkart-loader-message {
+    vertical-align:middle;
+}
+
+
+/**    SMALL LOADER    **/
+.norkart-loader-small {
+    display:table;
+    padding:10px;
+}
+
+.norkart-loader-spinner-small {
+    display: table-cell;
+    height: 28px;
+    width: 20px;
+    margin: 10px;
+    position: relative;
+    -webkit-animation: rotation .6s infinite linear;
+    -moz-animation: rotation .6s infinite linear;
+    -o-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    border-left: 4px solid rgba(81, 160, 38, .15);
+    border-right: 4px solid rgba(81, 160, 38, .15);
+    border-bottom: 4px solid rgba(81, 160, 38, .15);
+    border-top: 4px solid rgb(56, 138, 141);
+    border-radius: 100%;
+}
+
+.norkart-loader-text-container-small {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.norkart-loader-message {
+    padding: 15px;
+    vertical-align:middle;
+}
+
+
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
